@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b487a800-390c-41ad-b824-e2f4ee34ed5b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/kafka-consumer/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-consumer/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-consumer/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-consumer/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-consumer/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-consumer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-consumer/src/main/java/com/codingdecoded/sunchit/kafka/consumer/KafkaConsumerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-consumer/src/main/java/com/codingdecoded/sunchit/kafka/consumer/consumer/RiderLocationConsumerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-consumer/src/main/java/com/codingdecoded/sunchit/kafka/consumer/model/DriverLocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-consumer/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-consumer/src/test/java/com/codingdecoded/sunchit/kafka/consumer/KafkaConsumerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-publisher/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-publisher/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-publisher/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-publisher/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-publisher/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-publisher/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-publisher/src/main/java/com/codingdecoded/sunchit/kafka/publisher/UberDriverLocationUpdateApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-publisher/src/main/java/com/codingdecoded/sunchit/kafka/publisher/config/KafkaProducerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-publisher/src/main/java/com/codingdecoded/sunchit/kafka/publisher/controller/LocationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-publisher/src/main/java/com/codingdecoded/sunchit/kafka/publisher/model/DriverLocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-publisher/src/main/java/com/codingdecoded/sunchit/kafka/publisher/service/LocationPublisherService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-publisher/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-publisher/src/test/java/com/codingdecoded/sunchit/kafka/publisher/KafkaPublisherApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2wdjsNx60OrdJ6HNHkry7WEFNN2" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/sdudeja/Documents/CodingDecoded/Kafka"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b487a800-390c-41ad-b824-e2f4ee34ed5b" name="Changes" comment="" />
+      <created>1746378550294</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746378550294</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
