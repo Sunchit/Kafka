@@ -1,0 +1,49 @@
+Location : /Users/sdudeja/Downloads/kafka-3.7.1-sr
+
+Run the ZooKeeper : bin/zookeeper-server-start.sh config/zookeeper.properties
+
+Run the Kafka Server :  bin/kafka-server-start.sh config/server.properties
+
+Topic creation
+bin/kafka-topics.sh --create --topic <topic-name> --bootstrap-server localhost:9092
+
+bin/kafka-topics.sh --create --topic dummyTopic --bootstrap-server localhost:9092
+
+Topic Creation with partitions
+bin/kafka-topics.sh --create --topic driver-location-updates --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+
+Consumer
+bin/kafka-console-consumer.sh --topic driver-location-updates --bootstrap-server localhost:9092 --from-beginning
+
+Publish the event
+echo '{"driverId": "12345", "latitude": 40.7128, "longitude": -74.0060, "timestamp": "2025-05-04T14:30:00Z"}' | bin/kafka-console-producer.sh --broker-list localhost:9092 --topic driver-location-updates
+
+
+*********************
+
+Topic creation with 2 partitions
+bin/kafka-topics.sh --create --topic driver-location-updates-with-2-partitions --bootstrap-server localhost:9092 --partitions 2 --replication-factor 1
+
+Describe a topic
+bin/kafka-topics.sh --describe --topic driver-location-updates-with-2-partitions --bootstrap-server localhost:9092
+
+List Topics
+bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+
+Create a single consumer without any group
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic driver-location-updates-with-2-partitions --from-beginning
+
+Publish an Event on partition 1
+echo "1:{\"driverId\": \"1\", \"latitude\": 28.7041, \"longitude\": 77.1025, \"timestamp\": \"2025-05-04T14:30:00Z\"}" | bin/kafka-console-producer.sh --broker-list localhost:9092 --topic driver-location-updates-with-2-partitions --property "parse.key=true" --property "key.separator=:"
+
+echo "2:{\"driverId\": \"2\", \"latitude\": 28.6139, \"longitude\": 77.2090, \"timestamp\": \"2025-05-04T15:00:00Z\"}" | bin/kafka-console-producer.sh --broker-list localhost:9092 --topic driver-location-updates-with-2-partitions --property "parse.key=true" --property "key.separator=:"
+
+Create a single consumer with group
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic driver-location-updates-with-2-partitions --group driver-location-consumer --from-beginning
+
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic driver-location-updates-with-2-partitions --group driver-location-consumer --from-beginning
+
+
+Complete State of Consumers
+
+bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group driver-location-consumer
