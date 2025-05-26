@@ -15,11 +15,14 @@ public class KafkaTopicConfig {
     @Value("${kafka.topic.partitions}")
     private int partitions;
 
+    @Value("${kafka.topic.replicas}")
+    private int replicas;
+
     @Bean
     public NewTopic driverLocationTopic() {
         return TopicBuilder.name(topicName)
                 .partitions(partitions)
-                .replicas(1)
+                .replicas(replicas)
                 .build();
     }
 } 
