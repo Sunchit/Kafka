@@ -12,7 +12,7 @@ public class RiderLocationConsumerService {
 
     private final ObjectMapper objectMapper = new ObjectMapper();
 
-    @KafkaListener(topics = "${kafka.topic.driver-location}", groupId = "${spring.kafka.consumer.group-id}", concurrency="3")
+    @KafkaListener(topics = "${kafka.topic.driver-location}", groupId = "${spring.kafka.consumer.group-id}")
     public void consume(ConsumerRecord<String, String> record) {
         try {
             String key = record.key();
@@ -20,7 +20,7 @@ public class RiderLocationConsumerService {
 
             DriverLocation location = objectMapper.readValue(value, DriverLocation.class);
 
-            System.out.println("📡 [Existing Notification] Location update received for driver " + location.getDriverId());
+            System.out.println("📡 Location update received for driver " + location.getDriverId());
             System.out.println("   Coordinates: " + location.getLatitude() + ", " + location.getLongitude());
             System.out.println("   Time: " + location.getTimestamp());
 
