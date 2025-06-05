@@ -1,6 +1,7 @@
 Location : /Users/sdudeja/Downloads/kafka-3.7.1-sr
 
 Run the ZooKeeper : bin/zookeeper-server-start.sh config/zookeeper.properties
+(If above command not running use : bin/zkServer.sh start; newer versions do not have zookeeper-server-start.sh script)
 
 Run the Kafka Server :  bin/kafka-server-start.sh config/server.properties
 
