@@ -1,0 +1,32 @@
+# Maven build directory
+target/
+
+# Maven wrapper files we don't need in image
+.mvn/
+mvnw
+mvnw.cmd
+
+# IDE specific files
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# Logs
+*.log
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Git directory
+.git/
+.gitignore
+
+# Test directory
+src/test/
+
+# Local application properties
+src/main/resources/application-*.properties
+!src/main/resources/application.properties
